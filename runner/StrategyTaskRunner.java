@@ -6,7 +6,7 @@ import factory.TaskContainerFactory;
 import model.Task;
 
 public class StrategyTaskRunner implements TaskRunner {
-    private Container container;
+    private final Container container;
 
     public StrategyTaskRunner(Strategy strategy) {
         this.container = TaskContainerFactory.getInstance().createContainer(strategy);

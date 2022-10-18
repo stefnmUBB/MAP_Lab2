@@ -15,7 +15,6 @@ public class TaskContainerFactory implements Factory {
         return instance;
     }
 
-
     @Override
     public Container createContainer(Strategy strategy) {
         switch (strategy){
